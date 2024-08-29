@@ -14,7 +14,7 @@ public class EnhancedCalculator {
             System.out.print("Enter your choice: ");
 
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine(); 
 
             switch (choice) {
                 case 1:
@@ -39,11 +39,11 @@ public class EnhancedCalculator {
     private static void basicArithmetic(Scanner scanner) {
         System.out.print("Enter first number: ");
         double num1 = scanner.nextDouble();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine(); 
 
         System.out.print("Enter second number: ");
         double num2 = scanner.nextDouble();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine(); 
 
         System.out.println("\nChoose an operation:");
         System.out.println("1. Addition (+)");
@@ -53,7 +53,7 @@ public class EnhancedCalculator {
         System.out.print("Enter your choice: ");
 
         int choice = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine(); 
 
         double result = 0;
         switch (choice) {
@@ -83,7 +83,7 @@ public class EnhancedCalculator {
     private static void scientificCalculations(Scanner scanner) {
         System.out.print("Enter the number: ");
         double num = scanner.nextDouble();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine(); 
 
         System.out.println("\nChoose an operation:");
         System.out.println("1. Square Root");
@@ -91,7 +91,7 @@ public class EnhancedCalculator {
         System.out.print("Enter your choice: ");
 
         int choice = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine(); 
 
         double result = 0;
         switch (choice) {
@@ -105,7 +105,7 @@ public class EnhancedCalculator {
             case 2:
                 System.out.print("Enter the exponent: ");
                 double exponent = scanner.nextDouble();
-                scanner.nextLine(); // Consume newline
+                scanner.nextLine(); 
                 result = Math.pow(num, exponent);
                 break;
             default:
@@ -122,7 +122,7 @@ public class EnhancedCalculator {
         System.out.print("Enter your choice: ");
 
         int choice = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine(); 
 
         switch (choice) {
             case 1:
@@ -143,11 +143,11 @@ public class EnhancedCalculator {
         System.out.print("Enter your choice: ");
 
         int choice = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine(); 
 
         System.out.print("Enter the temperature: ");
         double temperature = scanner.nextDouble();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine(); 
 
         double result = 0;
         if (choice == 1) {
@@ -168,14 +168,14 @@ public class EnhancedCalculator {
         System.out.print("Enter your choice: ");
 
         int choice = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine();
 
         System.out.print("Enter the amount: ");
         double amount = scanner.nextDouble();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine(); 
 
         double result = 0;
-        // Assuming a fixed exchange rate for simplicity
+ 
         if (choice == 1) {
             result = amount * 0.9; // 1 USD = 0.9 EUR (approximation)
             System.out.println("Amount in EUR: " + result);
